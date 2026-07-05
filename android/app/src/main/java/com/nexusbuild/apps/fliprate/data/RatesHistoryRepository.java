@@ -47,9 +47,8 @@ public class RatesHistoryRepository {
         }
     }
 
-    // Placeholder — replace with the real GitHub owner/repo before deploying.
     private static final String RATES_HISTORY_URL =
-            "https://raw.githubusercontent.com/YOUR_GH_USERNAME/FlipRate/main/data/rates-history.json";
+            "https://raw.githubusercontent.com/jabidasraf100/FlipRate/main/data/rates-history.json";
 
     private final ExecutorService executor = Executors.newCachedThreadPool();
     private final Handler mainHandler = new Handler(Looper.getMainLooper());

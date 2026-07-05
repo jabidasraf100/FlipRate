@@ -1,6 +1,5 @@
-// Placeholder — replace with the real GitHub owner/repo before deploying.
 const RATES_HISTORY_URL =
-  "https://raw.githubusercontent.com/YOUR_GH_USERNAME/FlipRate/main/data/rates-history.json";
+  "https://raw.githubusercontent.com/jabidasraf100/FlipRate/main/data/rates-history.json";
 
 const LIVE_RATES_ENDPOINT = "https://api.exchangerate-api.com/v4/latest/";
 
