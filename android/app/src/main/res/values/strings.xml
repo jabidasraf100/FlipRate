@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FlipRate</string>
+    <string name="popular_pairs">Popular pairs</string>
+    <string name="save_favorite">☆ Save as favorite</string>
+    <string name="add_wishlist">＋ Add to wishlist</string>
+    <string name="favorites_title">Favorites</string>
+    <string name="wishlist_title">Wishlist</string>
+    <string name="chart_title">7-day trend</string>
+    <string name="favorites_empty">No favorites saved yet.</string>
+    <string name="wishlist_empty">No wishlist entries yet.</string>
+    <string name="chart_empty">No history data available yet.</string>
+    <string name="list_full_message">%1$s full (%2$d/%2$d) — remove one to add another.</string>
+</resources>

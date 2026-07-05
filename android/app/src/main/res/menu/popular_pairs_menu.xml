@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/pair_usd_eur" android:title="USD → EUR" />
+    <item android:id="@+id/pair_usd_gbp" android:title="USD → GBP" />
+    <item android:id="@+id/pair_usd_bdt" android:title="USD → BDT" />
+    <item android:id="@+id/pair_eur_bdt" android:title="EUR → BDT" />
+    <item android:id="@+id/pair_gbp_bdt" android:title="GBP → BDT" />
+    <item android:id="@+id/pair_usd_jpy" android:title="USD → JPY" />
+    <item android:id="@+id/pair_usd_inr" android:title="USD → INR" />
+</menu>

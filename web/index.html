@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlipRate — Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1 class="app-title">FlipRate</h1>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <main class="app-main">
+    <section class="card converter">
+      <div class="field">
+        <label for="amount-input">Amount</label>
+        <input id="amount-input" type="number" inputmode="decimal" value="1" min="0" step="any" />
+      </div>
+
+      <div class="pair-row">
+        <div class="field">
+          <label for="from-select">From</label>
+          <select id="from-select"></select>
+        </div>
+
+        <button id="swap-btn" class="swap-btn" type="button" aria-label="Swap currencies">⇄</button>
+
+        <div class="field">
+          <label for="to-select">To</label>
+          <select id="to-select"></select>
+        </div>
+      </div>
+
+      <div class="result">
+        <div id="converted-amount" class="converted-amount">—</div>
+        <div id="rate-line" class="rate-line">—</div>
+      </div>
+
+      <div class="actions-row">
+        <button id="save-favorite-btn" class="secondary-btn" type="button">☆ Save as favorite</button>
+        <button id="add-wishlist-btn" class="secondary-btn" type="button">＋ Add to wishlist</button>
+      </div>
+      <div id="favorites-msg" class="inline-msg" hidden></div>
+      <div id="wishlist-msg" class="inline-msg" hidden></div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Favorites</h2>
+      <ul id="favorites-list" class="favorites-list"></ul>
+      <p id="favorites-empty" class="empty-state">No favorites saved yet.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Wishlist</h2>
+      <div class="table-wrap">
+        <table id="wishlist-table" class="wishlist-table">
+          <thead>
+            <tr>
+              <th>Amount</th>
+              <th>Convert to</th>
+              <th>Current rate</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="wishlist-tbody"></tbody>
+        </table>
+      </div>
+      <p id="wishlist-empty" class="empty-state">No wishlist entries yet.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">7-day trend: <span id="chart-pair-label">—</span></h2>
+      <canvas id="rate-chart" width="600" height="220"></canvas>
+      <p id="chart-empty" class="empty-state" hidden>No history data available yet.</p>
+    </section>
+  </main>
+
+  <script src="js/currencies.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/rates.js"></script>
+  <script src="js/converter.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
