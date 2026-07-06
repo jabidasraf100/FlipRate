@@ -22,6 +22,7 @@ function initTheme() {
 function init() {
   initTheme();
   initConverter();
+  initPopularPairs();
   initFavorites();
   initWishlist();
   renderRateChart(converterState.from, converterState.to);

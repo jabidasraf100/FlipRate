@@ -203,6 +203,19 @@ select {
   color: var(--danger);
 }
 
+.popular-pairs-list li {
+  padding: 0.4rem 0.9rem;
+}
+
+.popular-pairs-list .pair-label {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
 .table-wrap {
   overflow-x: auto;
 }
